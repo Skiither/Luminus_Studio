@@ -1,4 +1,4 @@
-import "./studio.css";
+import "./Studio.css";
 
 function Studio() {
     return (
