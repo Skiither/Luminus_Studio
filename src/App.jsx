@@ -6,11 +6,13 @@ import ServicesPage from "./Pages/ServicesPage/ServicesPage.jsx";
 import PortfolioPage from "./Pages/PortfolioPage/PortfolioPage.jsx";
 import ContactPage from "./Pages/ContactPage/ContactPage.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop.jsx";
 
 function App() {
   return (
     <div className="site">
       <Header />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<HomePage />} />
