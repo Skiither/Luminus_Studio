@@ -1,0 +1,50 @@
+.portfolio-formats {
+    background: #111014;
+    color: #f5f1e8;
+}
+
+.portfolio-formats-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 460px);
+    gap: clamp(28px, 6vw, 80px);
+    align-items: end;
+}
+
+.portfolio-formats-header h2 {
+    max-width: 760px;
+    font-size: clamp(2.4rem, 5vw, 5rem);
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.portfolio-formats-header p {
+    color: rgba(245, 241, 232, 0.68);
+    font-size: 1.06rem;
+    line-height: 1.7;
+}
+
+.portfolio-formats-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 56px;
+}
+
+.portfolio-formats-list span {
+    border: 1px solid rgba(245, 241, 232, 0.16);
+    border-radius: 999px;
+    padding: 14px 18px;
+    background: rgba(245, 241, 232, 0.04);
+    color: #f5f1e8;
+    font-weight: 800;
+}
+
+@media (max-width: 720px) {
+    .portfolio-formats-header {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-formats-list {
+        margin-top: 42px;
+    }
+}

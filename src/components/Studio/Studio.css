@@ -1,0 +1,135 @@
+.studio {
+    background: 
+    radial-gradient(circle at 12% 20%, rgba(255, 191, 87, 0.16), transparent 28%),
+    #15121f;
+    color: #f5f1e8;
+}
+
+.studio-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 460px);
+    gap: clamp(32px, 7vw, 96px);
+    align-items: center;
+}
+
+.studio-content h2 {
+    max-width: 760px;
+    font-size: clamp(2.4rem, 5vw, 5rem);
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.studio-content p {
+    max-width: 620px;
+    margin-top: 26px;
+    color: rgba(245, 241, 232, 0.7);
+    font-size: 1.06rem;
+    line-height: 1.7;
+}
+
+.studio-features {
+    display: grid;
+    gap: 18px;
+    margin-top: 44px;
+}
+
+.studio-features article {
+    display: grid;
+    gap: 8px;
+    border-top: 1px solid rgba(245, 241, 232, 0.14);
+    padding-top: 18px;
+}
+
+.studio-features strong {
+    color: #ffbf57;
+}
+
+.studio-features span {
+    color: rgba(245, 241, 232, 0.68);
+    line-height: 1.6;
+}
+
+.studio-panel {
+    min-height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(245, 241, 232, 0.14);
+    border-radius: 8px;
+    padding: 24px;
+    background: 
+    linear-gradient(160deg, rgba(245, 241, 232, 0.08), rgba(245, 241, 232, 0.02)),
+    #08080c;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.3);
+}
+
+.studio-panel-top {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(245, 241, 232, 0.68);
+    font-size: 0.82rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.studio-panel-top span:first-child {
+    color: #ff5b4a;
+}
+
+.studio-meter span {
+    width: 28px;
+    border-radius: 999px;
+    background: linear-gradient(to top, #ffbf57, #fff3d3);
+}
+
+.studio-meter span:nth-child(1) {
+    height: 42%;
+}
+
+.studio-meter span:nth-child(2) {
+    height: 72%;
+}
+
+.studio-meter span:nth-child(3) {
+    height: 100%;
+}
+
+.studio-meter span:nth-child(4) {
+    height: 62%;
+}
+
+.studio-meter span:nth-child(5) {
+    height: 84%;
+}
+
+.studio-timeline span {
+    height: 10px;
+    border-radius: 999px;
+    background: rgba(245, 241, 232, 0.12);
+}
+
+studio-timeline span:nth-child(1) {
+    width: 92%;
+}
+
+studio-timeline span:nth-child(2) {
+    width: 68%;
+}
+
+studio-timeline span:nth-child(3) {
+    width: 80%;
+}
+
+@media (max-width: 860px) {
+    .studio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .studio-panel {
+        min-height: 360px;
+    }
+
+    .studio-meter {
+        height: 160px;
+    }
+}
