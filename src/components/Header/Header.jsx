@@ -12,7 +12,7 @@ function Header() {
   return (
     <header className={`site-header ${isMenuOpen ? "menu-open" : ""}`}>
       <NavLink className="brand" to="/" aria-label="Luminus" onClick={closeMenu}>
-      Luminus
+      <img src="/imagens/logo-luminus.jpg" alt="Luminus" />
       </NavLink>
 
       <button
