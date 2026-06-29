@@ -1,26 +1,49 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { portfolioCategories, portfolioItems } from "../../data/portfolio";
 import "./Portfolio.css";
 
+const ITEMS_PER_PAGE = 12;
+
 function Portfolio() {
   const [activeCategory, setActiveCategory] = useState("Todos");
+  const [currentPage, setCurrentPage] = useState(1);
 
-  const filteredItems =
-    activeCategory === "Todos"
-      ? portfolioItems
-      : portfolioItems.filter((item) => item.category === activeCategory);
+  const filteredItems = useMemo(() => {
+    if (activeCategory === "Todos") {
+      return portfolioItems;
+    }
+
+    return portfolioItems.filter((item) => item.category === activeCategory);
+  }, [activeCategory]);
+
+  const totalPages = Math.ceil(filteredItems.length / ITEMS_PER_PAGE);
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const visibleItems = filteredItems.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  function selectCategory(category) {
+    setActiveCategory(category);
+    setCurrentPage(1);
+  }
+
+  function goToPreviousPage() {
+    setCurrentPage((page) => Math.max(page - 1, 1));
+  }
+
+  function goToNextPage() {
+    setCurrentPage((page) => Math.min(page + 1, totalPages));
+  }
 
   return (
     <section className="portfolio section-padding" id="portfolio">
       <div className="portfolio-header">
         <div>
           <div className="section-kicker">Portfolio</div>
-          <h2>Trabalhos que ja ganharam voz com a Luminus.</h2>
+          <h2>Nosso catalogo de producoes.</h2>
         </div>
 
         <p>
-          Uma selecao simples de projetos por formato, para mostrar onde nossa
-          direcao vocal, adaptacao e finalizacao podem entrar.
+          Explore os projetos por categoria. Cada capa representa um formato de
+          trabalho que pode receber dublagem, voz original, localizacao ou direcao vocal.
         </p>
       </div>
 
@@ -31,7 +54,7 @@ function Portfolio() {
             type="button"
             key={category}
             aria-pressed={activeCategory === category}
-            onClick={() => setActiveCategory(category)}
+            onClick={() => selectCategory(category)}
           >
             {category}
           </button>
@@ -39,25 +62,38 @@ function Portfolio() {
       </div>
 
       <div className="portfolio-grid">
-        {filteredItems.map((item) => (
-          <article
-            className="portfolio-card"
-            key={item.title}
-            style={{ "--card-accent": item.accent }}
-          >
-            <div className="portfolio-cover" aria-hidden="true">
-              <span>{item.category}</span>
-              <strong>{item.title.slice(0, 2)}</strong>
-            </div>
+        {visibleItems.map((item) => (
+          <article className="portfolio-card" key={item.title}>
+            <img src={item.cover} alt={`Capa de ${item.title}`} loading="lazy" />
 
-            <div className="portfolio-card-content">
-              <span>{item.type}</span>
+            <div className="portfolio-card-info">
+              <span>{item.category}</span>
               <h3>{item.title}</h3>
-              <p>{item.description}</p>
+              <p>{item.type}</p>
             </div>
           </article>
         ))}
       </div>
+
+      {totalPages > 1 && (
+        <div className="portfolio-pagination" aria-label="Paginacao do portfolio">
+          <button type="button" onClick={goToPreviousPage} disabled={currentPage === 1}>
+            Anterior
+          </button>
+
+          <span>
+            Pagina {currentPage} de {totalPages}
+          </span>
+
+          <button
+            type="button"
+            onClick={goToNextPage}
+            disabled={currentPage === totalPages}
+          >
+            Proxima
+          </button>
+        </div>
+      )}
     </section>
   );
 }
