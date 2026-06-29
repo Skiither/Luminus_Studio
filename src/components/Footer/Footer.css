@@ -1,7 +1,7 @@
 .footer {
   background: #08080c;
   color: #f5f1e8;
-  padding: 64px clamp(20px, 6vw, 88px) 28px;
+  padding: 64px clamp(20px, 6vw, 88px) max(28px, env(safe-area-inset-bottom));
   border-top: 1px solid rgba(245, 241, 232, 0.12);
 }
 

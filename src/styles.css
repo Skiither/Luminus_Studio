@@ -6,6 +6,8 @@
 
 html {
     scroll-behavior: smooth;
+    min-height: 100%;
+    overscroll-behavior-y: none;
 }
 
 body {
@@ -13,6 +15,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: #08080c;
     color: #f5f1e8;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+}
+
+#root {
+    min-height: 100vh;
 }
 
 a {
@@ -35,8 +43,16 @@ img {
 
 .site {
     min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
     background: radial-gradient(circle at 78% 20%, rgba(255, 191, 87, 0.22), transparent 28%),
     linear-gradient(135deg, #08080c 0%, #15121f 48%, #2a1410 100%);
+}
+
+.site > footer {
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 .button {
