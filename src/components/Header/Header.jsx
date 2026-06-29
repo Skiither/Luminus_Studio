@@ -36,9 +36,6 @@ function Header() {
         <NavLink to="/portfolio" onClick={closeMenu}>
         Portfolio
         </NavLink>
-        <NavLink to="/contato" onClick={closeMenu}>
-        Contato
-        </NavLink>
       </nav>
 
       <NavLink className="header-cta" to="/contato" onClick={closeMenu}>
