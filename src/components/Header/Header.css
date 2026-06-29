@@ -23,8 +23,9 @@
 
 .brand img {
     display: block;
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 54px;
+    object-fit: contain;
 }
 
 .main-nav {

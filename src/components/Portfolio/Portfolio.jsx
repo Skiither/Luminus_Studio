@@ -1,10 +1,11 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { portfolioCategories, portfolioItems } from "../../data/portfolio";
 import "./Portfolio.css";
 
 const ITEMS_PER_PAGE = 12;
 
 function Portfolio() {
+  const gridRef = useRef(null);
   const [activeCategory, setActiveCategory] = useState("Todos");
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -23,14 +24,23 @@ function Portfolio() {
   function selectCategory(category) {
     setActiveCategory(category);
     setCurrentPage(1);
+    scrollToCatalog();
   }
 
   function goToPreviousPage() {
     setCurrentPage((page) => Math.max(page - 1, 1));
+    scrollToCatalog();
   }
 
   function goToNextPage() {
     setCurrentPage((page) => Math.min(page + 1, totalPages));
+    scrollToCatalog();
+  }
+
+  function scrollToCatalog() {
+    window.requestAnimationFrame(() => {
+      gridRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 
   return (
@@ -61,7 +71,7 @@ function Portfolio() {
         ))}
       </div>
 
-      <div className="portfolio-grid">
+      <div className="portfolio-grid" ref={gridRef}>
         {visibleItems.map((item) => (
           <article className="portfolio-card" key={item.title}>
             <img src={item.cover} alt={`Capa de ${item.title}`} loading="lazy" />

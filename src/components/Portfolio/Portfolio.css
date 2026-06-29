@@ -61,6 +61,7 @@
 }
 
 .portfolio-grid {
+    scroll-margin-top: 110px;
     display: grid;
     grid-template-columns: repeat(4, 200px);
     justify-content: center;
