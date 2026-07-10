@@ -1,51 +1,46 @@
-import "./About.css"
+import "./About.css";
 
 function About() {
     return (
         <section className="about section-padding" id="sobre">
-            <div className="section-kicker">Sobre a Luminus</div>
+            <div className="section-kicker">Nossa empresa</div>
 
             <div className="about-grid">
                 <div>
                     <h2>
-                        Um estúdio feito para dar presença, ritmo e identidade a cada voz.
+                        Qualidade e respeito sempre.
                     </h2>
                 </div>
 
                 <div className="about-copy">
                     <p>
-                        A Luminus é um estúdio brasileiro de dublagem e produção vocal
-                        dedicado a transformar personagens, marcas e narrativas em 
-                        experiências sonoras memoráveis.
+                        A Luminus e uma empresa que atua na area de dublagem e producoes artisticas. Formada por profissionais que estao na area ha mais de 10 anos, a Luminus tem como responsabilidade valorizar o produto de seus clientes.
                     </p>
 
                     <p>
-                        Atuamos com direção artística, escalação de vozes, gravação,
-                        localização, edição e finalização, mantendo cuidado criativo em 
-                        cada etapa do processo.
+                        Tambem valorizamos os profissionais envolvidos, dando a cada um o respeito merecido pelo seu trabalho.
                     </p>
                 </div>
             </div>
 
             <div className="stats-grid">
-            <article>
-                <strong>+120</strong>
-                <span>Projetos adaptados</span>
-            </article>
+                <article>
+                    <strong>+10</strong>
+                    <span>Anos de experiencia no segmento</span>
+                </article>
 
-            <article>
-                <strong>4</strong>
-                <span>Salas de gravação</span>
-            </article>
+                <article>
+                    <strong>SP</strong>
+                    <span>Atendimento em Sao Paulo - Lapa</span>
+                </article>
 
-            <article>
-                <strong>BR</strong>
-                <span>Talentos de todo o país</span>
-            </article>
+                <article>
+                    <strong>AV</strong>
+                    <span>Dublagem e producoes artisticas</span>
+                </article>
             </div>
-
         </section>
-    )
+    );
 }
 
 export default About;

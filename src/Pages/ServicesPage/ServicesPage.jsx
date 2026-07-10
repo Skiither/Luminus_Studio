@@ -9,11 +9,10 @@ function ServicesPage() {
             <section className="page-hero">
                 <p className="section-kicker">Serviços</p>
 
-                <h1>Produção vocal completa para dublagem, gamer e marcas.</h1>
+                <h1>Dublagem, captação de áudio e produções artísticas.</h1>
 
                 <p>
-                    Da adaptação do texto á entrega final, a Luminus estrutura cada etapa
-                    para que voz, emoção e técnica acminhem juntas.
+                    Estrutura preparada para projetos audiovisuais em Home Video, DVD, Televisão, Vídeo Mix, Sellthru, Vídeo Treinamento, Institucionais, Audio Book e demais mídias.
                 </p>
             </section>
 
@@ -21,48 +20,43 @@ function ServicesPage() {
 
             <section className="services-detail section-padding">
                 <div className="services-detail-header">
-                    <h2>O que pode entrar no seu projeto.</h2>
+                    <h2>Formatos atendidos pela Luminus.</h2>
 
                     <p>
-                        Cada entrega pode ser ajustada conforme o formato, prazo, equipe
-                        envolvida e necessidades técnicas.
+                        Os serviços acompanham as necessidades de cada mídia, sempre com foco em qualidade, respeito ao trabalho e cuidado com o produto do cliente.
                     </p>
                 </div>
 
                 <div className="services-detail-grid">
                     <article>
                         <span>01</span>
-                        <h3>Adaptação de roteiro</h3>
+                        <h3>Home Video, DVD e Televisão</h3>
                         <p>
-                            Ajuste de falas, expressões e ritmo para preservar sentido,
-                            intenção e naturalidade em português brasileiro.
+                            Captação de áudio e dublagem para conteúdos destinados a diferentes canais de exibição.
                         </p>
                     </article>
 
                     <article>
                         <span>02</span>
-                        <h3>Casting vocal</h3>
+                        <h3>Vídeo Mix e Sellthru</h3>
                         <p>
-                            Seleção de vozes alinhadas ao perfil da obra, personagem, público
-                            ou identidade da marca
+                            Produção de áudio para materiais de distribuição e circulação audiovisual.
                         </p>
                     </article>
 
                     <article>
                         <span>03</span>
-                        <h3>Direção de gravação</h3>
+                        <h3>Vídeo Treinamento</h3>
                         <p>
-                            Acompanhamento de interpretação, emoção, timing e consistência
-                            entre cenas, personagens ou campanhas.
+                            Voz e dublagem para materiais corporativos, educativos e treinamentos.
                         </p>
                     </article>
 
                     <article>
                         <span>04</span>
-                        <h3>Edição e sincronização</h3>
+                        <h3>Institucionais e Audio Book</h3>
                         <p>
-                            Limpeza, organização, tratamento e sincronização do áudio para 
-                            aprovação e uso final.
+                            Captação de voz para conteúdos institucionais, narrativos e demais mídias.
                         </p>
                     </article>
                 </div>

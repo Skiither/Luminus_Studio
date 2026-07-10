@@ -19,19 +19,19 @@ function Hero() {
             </div>
 
             <div className="hero-content">
-                <p className="eyebrow">Estúdio de dublagem no Brasil</p>
+                <p className="eyebrow">Grupo Luminus - Sao Paulo</p>
 
                 <h1>
-                    Voz, direção e emoção para histórias que precisam atravessar telas.
+                    Qualidade e respeito sempre em dublagem e producoes artisticas.
                 </h1>
 
                 <p className="hero-copy">
-                    A Luminus cria experiências de dublagem, voz original, localização e produção sonora para séries, games, filmes, publicidade e marcas.
+                    A Luminus atua na area de dublagem e producoes artisticas com profissionais que estao ha mais de 10 anos no segmento audiovisual.
                 </p>
 
                 <div className="hero-actions">
                     <Link className="button button-primary" to="/servicos">
-                        Ver serviços
+                        Conheca os servicos
                     </Link>
                 </div>
             </div>
@@ -39,4 +39,4 @@ function Hero() {
     );
 }
 
-export default Hero
+export default Hero;

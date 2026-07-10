@@ -48,12 +48,11 @@ function Portfolio() {
       <div className="portfolio-header">
         <div>
           <div className="section-kicker">Portfolio</div>
-          <h2>Nosso catalogo de producoes.</h2>
+          <h2>Produções em Destaque</h2>
         </div>
 
         <p>
-          Explore os projetos por categoria. Cada capa representa um formato de
-          trabalho que pode receber dublagem, voz original, localizacao ou direcao vocal.
+          Alguns trabalhos e formatos destacados pela Luminus em sua trajetória de dublagem e produção artística.
         </p>
       </div>
 

@@ -1,26 +1,32 @@
 export const services = [
-    {
-        title: "Dublagem",
-        description: "Direção, adaptação e gravação de vozes para séries, filmes, e conteúdos digitais"
-    },
-    {
-        title: "Voz Original",
-        description:"Criação e gravação de performances vocais para personagens, campanhas, institucionais e narrativas de marca."
-    },
-    {
-    title: "Localização",
-    description:"Adaptação cultural de diálogos, expressões e intenções para que cada história soe natural em português brasileiro.",
-    },
-    {
-    title: "Games",
-    description:"Captação de vozes para personagens, reações, cinemáticas, trailers e experiências interativas.",
-    },
-    {
-    title: "Direção artística",
-    description:"Acompanhamento criativo de elenco, intenção, ritmo e interpretação para manter a identidade da obra.",
-    },
-    {
-    title: "Edição e finalização",
-    description:"Tratamento, sincronização, limpeza e entrega de áudio pronto para os padrões técnicos do projeto.",
-    },
-]
+  {
+    title: "Dublagem",
+    description:
+      "Captação, gravação e direção de vozes para projetos audiovisuais em diferentes formatos.",
+  },
+  {
+    title: "Produções artísticas",
+    description:
+      "Equipe formada por profissionais com mais de 10 anos de atuação na área artística e audiovisual.",
+  },
+  {
+    title: "Home Video e DVD",
+    description:
+      "Estrutura para captação de áudio e dublagem voltada a Home Video, DVD e demais mídias físicas ou digitais.",
+  },
+  {
+    title: "Televisão",
+    description:
+      "Dublagem e produção de áudio para conteúdos televisivos, séries, programas e materiais de exibição.",
+  },
+  {
+    title: "Vídeo Mix e Sellthru",
+    description:
+      "Atendimento para formatos de distribuição, finalização e materiais de circulação audiovisual.",
+  },
+  {
+    title: "Institucionais e Audio Book",
+    description:
+      "Captação de áudio para vídeo treinamento, institucionais, audio book e outras necessidades de voz.",
+  },
+];

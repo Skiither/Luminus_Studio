@@ -7,12 +7,11 @@ function Footer() {
       <div className="footer-main">
         <div>
           <NavLink className="footer-brand" to="/">
-            Luminus
+            Grupo Luminus
           </NavLink>
 
           <p>
-            Estudio brasileiro de dublagem, localizacao e producao vocal para
-            historias que precisam ser ouvidas com intencao.
+            Empresa de dublagem e produções artísticas em São Paulo, formada por profissionais com mais de 10 anos de atuação.
           </p>
         </div>
 
@@ -24,16 +23,15 @@ function Footer() {
         </nav>
 
         <div className="footer-contact">
-          <a href="mailto:contato@luminus.com.br">contato@luminus.com.br</a>
-          <a href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">
-            WhatsApp
-          </a>
+          <a href="mailto:luminussp@luminussp.com">luminussp@luminussp.com</a>
+          <span>Rua Apodi, 22 - Siciliano / Lapa</span>
+          <span>São Paulo - SP</span>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <span>2026 Luminus Studio</span>
-        <span>Brasil - atendimento remoto</span>
+        <span>© 2021 Grupo Luminus</span>
+        <span>Qualidade e Respeito Sempre</span>
       </div>
     </footer>
   );

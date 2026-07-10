@@ -1,24 +1,21 @@
-import "./Contact.css"
+import "./Contact.css";
 
 function Contact() {
     return (
         <section className="contact section-padding" id="contato">
             <div className="contact-grid">
                 <div className="contact-content">
-                    <div className="section-kicker">Contato</div>
+                    <div className="section-kicker">Contate-nos</div>
 
-                    <h2>Tem um projeto que precisa encontrar a voz certa?</h2>
+                    <h2>Faça um orçamento ou agende uma visita.</h2>
 
                     <p>
-                        Envie uma mensagem para falar sobre dublagel, localização, voz
-                        original, casting, parcerias ou orçamento
+                        Para fazer um orçamento, agendar uma visita ou deixar a sua opinião sobre nossa empresa, utilize os campos abaixo ou entre em contato diretamente.
                     </p>
                     <div className="contact-info">
-                        <a href="mailto:ccontato@luminus.com.br">contato@luminus.com.br</a>
-                        <a href="https://wa.me/5500000000000" target="_blank" rel="noreferrer">
-                        WhatsApp
-                        </a>
-                        <span>Brasil Atendimento remoto</span>
+                        <a href="mailto:luminussp@luminussp.com">luminussp@luminussp.com</a>
+                        <span>Rua Apodi, 22 - Siciliano / Lapa</span>
+                        <span>São Paulo - SP</span>
                     </div>
                 </div>
 
@@ -34,17 +31,8 @@ function Contact() {
                     </label>
 
                     <label>
-                        Tipo de projeto
-                        <select name="projectType" defaultValue="">
-                            <option value="" disabled>
-                                Selecione uma opção
-                            </option>
-                            <option value="dublagem">Dublagem</option>
-                            <option value="gamer">Games</option>
-                            <option value="publicidade">Publicidade</option>
-                            <option value="licalizacao">Localização</option>
-                            <option value="outro">Outro</option>
-                        </select>
+                        Assunto
+                        <input type="text" name="subject" placeholder="Orçamento, visita ou mensagem" />
                     </label>
 
                     <label>
@@ -56,7 +44,7 @@ function Contact() {
                         ></textarea>
 
                         <button className="button button-primary" type="submit">
-                            Enviar mensagem
+                            Enviar
                         </button>
                     </label>
                 </form>

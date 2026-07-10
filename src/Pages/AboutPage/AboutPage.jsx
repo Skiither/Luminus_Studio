@@ -1,41 +1,35 @@
 import About from "../../components/About/About.jsx";
-import Studio from "../../components/Studio/Studio.jsx"
-import Process from "../../components/Process/Process.jsx"
+import Studio from "../../components/Studio/Studio.jsx";
+import Process from "../../components/Process/Process.jsx";
 import "./AboutPage.css";
 
 function AboutPage() {
     return (
         <main className="page about-page">
             <section className="page-hero">
-                <p className="section-kicker">Sobre</p>
+                <p className="section-kicker">Nossa empresa</p>
 
-                <h1>Um estúdio brasileiro para histórias que precisam ganhar voz.</h1>
+                <h1>Qualidade e respeito sempre.</h1>
 
                 <p>
-                    A Luminus nasce para unir direção artística, cuidado técnico e
-                    sensisbilidade vocal em projetos de dublagem, localização e produção 
-                    sonora.
+                    A Luminus atua na área de dublagem e produções artísticas, valorizando o produto de seus clientes e os profissionais envolvidos em cada trabalho.
                 </p>
             </section>
 
             <section className="about-page-story section-padding">
                 <div>
-                    <h2>Trabalhamos para que cada fala soe viva, natural e presente.</h2>
+                    <h2>Mais de 10 anos de experiência no segmento audiovisual.</h2>
                 </div>
 
-                    <div className="about-page-copy">
-                        <p>
-                            nossa proposta é construir pontes entre histórias e públicos. Para 
-                            isso, cuidamos de interpretação, ritmo, adaptação cultural,
-                            intenção, escolha de elenco e acabamento técnico.
-                        </p>
+                <div className="about-page-copy">
+                    <p>
+                        Formada por profissionais que estão na área há mais de 10 anos, a Luminus tem como responsabilidade valorizar o produto de seus clientes.
+                    </p>
 
-                        <p>
-                            Mais do que gravar vozes, busamos preservar emoção, contexto e
-                            identidade. Cada projeto pede uma escuta diferente, e é isso que
-                            guia nosso processo.
-                        </p>
-                    </div>
+                    <p>
+                        Atuando no segmento de áudio visual, nossos estúdios estão preparados para captação de áudio e dublagem para Home Video, DVD, Televisão, Vídeo Mix, Sellthru, Vídeo Treinamento, Institucionais, Audio Book e demais mídias.
+                    </p>
+                </div>
             </section>
             <About />
             <Studio />
